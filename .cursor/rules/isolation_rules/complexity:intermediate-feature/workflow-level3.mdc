@@ -94,7 +94,7 @@ Prepare the Memory Bank for a Level 3 feature.
 
 ```mermaid
 graph TD
-    StartDoc["Begin L3 Documentation<br>Setup"] --> LoadL3PlanTrack["Load L3 Planning & Tracking Rules<br>Level3/planning-comprehensive.mdc<br>Level3/task-tracking-intermediate.mdc"]
+    StartDoc["Begin L3 Documentation<br>Setup"] --> LoadL3PlanTrack["Load L3 Planning & Tracking Rules<br>complexity:intermediate-feature/planning-comprehensive.mdc<br>complexity:intermediate-feature/task-tracking-intermediate.mdc"]
     LoadL3PlanTrack --> UpdateBrief["Review/Update `projectbrief.md`<br>Ensure feature aligns with overall project goals"]
     UpdateBrief --> UpdateActiveCtx["Update `activeContext.md`<br>Set focus to L3 Feature Planning"]
     UpdateActiveCtx --> PrepTaskFile["Prepare `tasks.md` for<br>Comprehensive Feature Plan sections"]
@@ -105,10 +105,10 @@ graph TD
 ```
 
   * **Steps:**
-    1.  Load Level 3 specific planning (`Level3/planning-comprehensive.mdc`) and task tracking (`Level3/task-tracking-intermediate.mdc`) rules.
+    1.  Load Level 3 specific planning (`complexity:intermediate-feature/planning-comprehensive.mdc`) and task tracking (`complexity:intermediate-feature/task-tracking-intermediate.mdc`) rules.
     2.  Review `memory-bank/projectbrief.md`: Briefly note the new feature if it impacts the overall brief.
     3.  Update `memory-bank/activeContext.md`: Set current focus to "Level 3 Feature Planning: [Feature Name]".
-    4.  Ensure `memory-bank/tasks.md` is ready for the detailed planning sections outlined in `Level3/planning-comprehensive.mdc`.
+    4.  Ensure `memory-bank/tasks.md` is ready for the detailed planning sections outlined in `complexity:intermediate-feature/planning-comprehensive.mdc`.
   * **Milestone Checkpoint:**
     ```
     ✓ L3 DOCUMENTATION SETUP CHECKPOINT
@@ -123,7 +123,7 @@ graph TD
 
 ### Phase 3: FEATURE PLANNING (PLAN Mode)
 
-Guided by `visual-maps/plan-mode-map.mdc` and using `Level3/planning-comprehensive.mdc` and `Level3/task-tracking-intermediate.mdc`.
+Guided by `visual-maps/plan-mode-map.mdc` and using `complexity:intermediate-feature/planning-comprehensive.mdc` and `complexity:intermediate-feature/task-tracking-intermediate.mdc`.
 
 ```mermaid
 graph TD
@@ -198,7 +198,7 @@ graph TD
 
 ### Phase 5: IMPLEMENTATION (IMPLEMENT Mode)
 
-Guided by `visual-maps/implement-mode-map.mdc` and `Level3/implementation-L3.mdc`.
+Guided by `visual-maps/implement-mode-map.mdc` and `complexity:intermediate-feature/implementation-L3.mdc`.
 
 ```mermaid
 graph TD
@@ -238,7 +238,7 @@ graph TD
 
 ### Phase 6: REFLECTION (REFLECT Mode)
 
-Guided by `visual-maps/reflect-mode-map.mdc` and `Level3/reflection-L3.mdc`.
+Guided by `visual-maps/reflect-mode-map.mdc` and `complexity:intermediate-feature/reflection-L3.mdc`.
 
 ```mermaid
 graph TD
@@ -275,7 +275,7 @@ graph TD
 
 ### Phase 7: ARCHIVING (ARCHIVE Mode - Highly Recommended for L3)
 
-Guided by `visual-maps/archive-mode-map.mdc` and `Level3/archive-L3.mdc`.
+Guided by `visual-maps/archive-mode-map.mdc` and `complexity:intermediate-feature/archive-L3.mdc`.
 
 ```mermaid
 graph TD

@@ -35,7 +35,7 @@ graph TD
     
     %% Level 1 continues normally
     ComplexityCP --> InitSystem["INITIALIZE MEMORY BANK"]
-    InitSystem --> Complete1["LEVEL 1 INITIALIZATION COMPLETE"]
+    InitSystem --> Complete1["QUICK FIX INITIALIZATION COMPLETE"]
     
     %% For Level 2+ tasks after PLAN and CREATIVE modes
     ForceExit -.-> OtherModes["PLAN → CREATIVE modes"]
@@ -127,9 +127,9 @@ graph TD
     
     EffortCheck --> DetermineLevel{"Determine<br>Complexity Level"}
     DetermineLevel -->|"Level 1"| L1["Level 1:<br>Quick Bug Fix"]
-    DetermineLevel -->|"Level 2"| L2["Level 2:<br>Simple Enhancement"]
-    DetermineLevel -->|"Level 3"| L3["Level 3:<br>Intermediate Feature"]
-    DetermineLevel -->|"Level 4"| L4["Level 4:<br>Complex System"]
+    DetermineLevel -->|"Simple Enhancement"| L2["Level 2:<br>Simple Enhancement"]
+    DetermineLevel -->|"Intermediate Feature"| L3["Level 3:<br>Intermediate Feature"]
+    DetermineLevel -->|"Complex System"| L4["Level 4:<br>Complex System"]
     
     L1 --> CDComplete["Complexity Determination<br>Complete"]
     L2 & L3 & L4 --> ModeSwitch["Force Mode Switch<br>to PLAN"]

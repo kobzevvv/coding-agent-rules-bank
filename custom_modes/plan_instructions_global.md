@@ -8,12 +8,12 @@ graph TD
     
     %% Complexity Level Determination
     ReadTasks --> CheckLevel{"🧩 Determine<br>Complexity Level"}
-    CheckLevel -->|"Level 2"| Level2["📝 LEVEL 2 PLANNING<br>~/.cursor/global-rules/isolation_rules/visual-maps/plan-mode-map.mdc"]
-    CheckLevel -->|"Level 3"| Level3["📋 LEVEL 3 PLANNING<br>~/.cursor/global-rules/isolation_rules/visual-maps/plan-mode-map.mdc"]
-    CheckLevel -->|"Level 4"| Level4["📊 LEVEL 4 PLANNING<br>~/.cursor/global-rules/isolation_rules/visual-maps/plan-mode-map.mdc"]
+    CheckLevel -->|"Level 2"| complexity:simple-enhancement["📝 LEVEL 2 PLANNING<br>~/.cursor/global-rules/isolation_rules/visual-maps/plan-mode-map.mdc"]
+    CheckLevel -->|"Level 3"| complexity:intermediate-feature["📋 LEVEL 3 PLANNING<br>~/.cursor/global-rules/isolation_rules/visual-maps/plan-mode-map.mdc"]
+    CheckLevel -->|"Level 4"| complexity:complex-system["📊 LEVEL 4 PLANNING<br>~/.cursor/global-rules/isolation_rules/visual-maps/plan-mode-map.mdc"]
     
     %% Level 2 Planning
-    Level2 --> L2Review["🔍 Review Code<br>Structure"]
+    complexity:simple-enhancement --> L2Review["🔍 Review Code<br>Structure"]
     L2Review --> L2Document["📄 Document<br>Planned Changes"]
     L2Document --> L2Challenges["⚠️ Identify<br>Challenges"]
     L2Challenges --> L2Checklist["✅ Create Task<br>Checklist"]
@@ -21,7 +21,7 @@ graph TD
     L2Update --> L2Verify["✓ Verify Plan<br>Completeness"]
     
     %% Level 3 Planning
-    Level3 --> L3Review["🔍 Review Codebase<br>Structure"]
+    complexity:intermediate-feature --> L3Review["🔍 Review Codebase<br>Structure"]
     L3Review --> L3Requirements["📋 Document Detailed<br>Requirements"]
     L3Requirements --> L3Components["🧩 Identify Affected<br>Components"]
     L3Components --> L3Plan["📝 Create Comprehensive<br>Implementation Plan"]
@@ -31,7 +31,7 @@ graph TD
     L3Flag --> L3Verify["✓ Verify Plan<br>Completeness"]
     
     %% Level 4 Planning
-    Level4 --> L4Analysis["🔍 Codebase Structure<br>Analysis"]
+    complexity:complex-system --> L4Analysis["🔍 Codebase Structure<br>Analysis"]
     L4Analysis --> L4Requirements["📋 Document Comprehensive<br>Requirements"]
     L4Requirements --> L4Diagrams["📊 Create Architectural<br>Diagrams"]
     L4Diagrams --> L4Subsystems["🧩 Identify Affected<br>Subsystems"]
@@ -59,9 +59,9 @@ graph TD
     style Start fill:#4da6ff,stroke:#0066cc,color:white
     style ReadTasks fill:#80bfff,stroke:#4da6ff,color:black
     style CheckLevel fill:#d94dbb,stroke:#a3378a,color:white
-    style Level2 fill:#4dbb5f,stroke:#36873f,color:white
-    style Level3 fill:#ffa64d,stroke:#cc7a30,color:white
-    style Level4 fill:#ff5555,stroke:#cc0000,color:white
+    style complexity:simple-enhancement fill:#4dbb5f,stroke:#36873f,color:white
+    style complexity:intermediate-feature fill:#ffa64d,stroke:#cc7a30,color:white
+    style complexity:complex-system fill:#ff5555,stroke:#cc0000,color:white
     style CheckCreative fill:#d971ff,stroke:#a33bc2,color:white
     style RecCreative fill:#ffa64d,stroke:#cc7a30,color:black
     style RecImplement fill:#4dbb5f,stroke:#36873f,color:black
@@ -96,7 +96,7 @@ Based on complexity level determined from tasks.md, load one of:
 #### For Level 2:
 ```
 read_file({
-  target_file: "~/.cursor/global-rules/isolation_rules/Level2/task-tracking-basic.mdc",
+  target_file: "~/.cursor/global-rules/isolation_rules/complexity:simple-enhancement/task-tracking-basic.mdc",
   should_read_entire_file: true
 })
 ```
@@ -104,7 +104,7 @@ read_file({
 #### For Level 3:
 ```
 read_file({
-  target_file: "~/.cursor/global-rules/isolation_rules/Level3/task-tracking-intermediate.mdc",
+  target_file: "~/.cursor/global-rules/isolation_rules/complexity:intermediate-feature/task-tracking-intermediate.mdc",
   should_read_entire_file: true
 })
 ```
@@ -112,7 +112,7 @@ read_file({
 #### For Level 4:
 ```
 read_file({
-  target_file: "~/.cursor/global-rules/isolation_rules/Level4/task-tracking-advanced.mdc",
+  target_file: "~/.cursor/global-rules/isolation_rules/complexity:complex-system/task-tracking-advanced.mdc",
   should_read_entire_file: true
 })
 ```

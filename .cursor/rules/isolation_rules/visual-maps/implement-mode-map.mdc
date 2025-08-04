@@ -24,7 +24,7 @@ graph TD
     ValidationComplete -->|"Yes"| CheckLevel{"Determine<br>Complexity Level<br>from tasks.md"}
     
     %% Level 1 Implementation
-    CheckLevel -->|"Level 1<br>Quick Bug Fix"| L1Process["LEVEL 1 PROCESS<br>Level1/quick-bug-workflow.md"]
+    CheckLevel -->|"Level 1<br>Quick Bug Fix"| L1Process["QUICK FIX PROCESS<br>complexity:quick-fix/quick-bug-workflow.md"]
     L1Process --> L1Review["Review Bug<br>Report"]
     L1Review --> L1Examine["Examine<br>Relevant Code"]
     L1Examine --> L1Fix["Implement<br>Targeted Fix"]
@@ -32,7 +32,7 @@ graph TD
     L1Test --> L1Update["Update<br>tasks.md"]
     
     %% Level 2 Implementation
-    CheckLevel -->|"Level 2<br>Simple Enhancement"| L2Process["LEVEL 2 PROCESS<br>Level2/enhancement-workflow.md"]
+    CheckLevel -->|"Level 2<br>Simple Enhancement"| L2Process["QUICK ENHANCEMENT PROCESS<br>complexity:simple-enhancement/enhancement-workflow.md"]
     L2Process --> L2Review["Review Build<br>Plan"]
     L2Review --> L2Examine["Examine Relevant<br>Code Areas"]
     L2Examine --> L2Implement["Implement Changes<br>Sequentially"]
@@ -40,7 +40,7 @@ graph TD
     L2Test --> L2Update["Update<br>tasks.md"]
     
     %% Level 3-4 Implementation
-    CheckLevel -->|"Level 3-4<br>Feature/System"| L34Process["LEVEL 3-4 PROCESS<br>Level3/feature-workflow.md<br>Level4/system-workflow.md"]
+    CheckLevel -->|"Level 3-4<br>Feature/System"| L34Process["INTERMEDIATE FEATURE-4 PROCESS<br>complexity:intermediate-feature/feature-workflow.md<br>complexity:complex-system/system-workflow.md"]
     L34Process --> L34Review["Review Plan &<br>Creative Decisions"]
     L34Review --> L34Phase{"Creative Phase<br>Documents<br>Complete?"}
     
@@ -84,7 +84,7 @@ graph TD
     
     CheckLevel -->|"Level 1"| L1Ready["Ready for<br>Implementation"]
     
-    CheckLevel -->|"Level 2"| L2Ready["Ready for<br>Implementation"]
+    CheckLevel -->|"Simple Enhancement"| L2Ready["Ready for<br>Implementation"]
     
     CheckLevel -->|"Level 3-4"| CheckCreative{"Creative phases<br>required?"}
     

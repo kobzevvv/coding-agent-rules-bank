@@ -156,7 +156,7 @@ Based on complexity level determined from tasks.md, load:
 #### For Level 1:
 ```
 read_file({
-  target_file: ".cursor/rules/isolation_rules/Level1/workflow-level1.mdc",
+  target_file: ".cursor/rules/isolation_rules/complexity:quick-fix/workflow-level1.mdc",
   should_read_entire_file: true
 })
 ```
@@ -164,7 +164,7 @@ read_file({
 #### For Level 2:
 ```
 read_file({
-  target_file: ".cursor/rules/isolation_rules/Level2/workflow-level2.mdc",
+  target_file: ".cursor/rules/isolation_rules/complexity:simple-enhancement/workflow-level2.mdc",
   should_read_entire_file: true
 })
 ```
@@ -177,7 +177,7 @@ read_file({
 })
 
 read_file({
-  target_file: ".cursor/rules/isolation_rules/Level4/phased-implementation.mdc",
+  target_file: ".cursor/rules/isolation_rules/complexity:complex-system/phased-implementation.mdc",
   should_read_entire_file: true
 })
 ```

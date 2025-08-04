@@ -67,7 +67,7 @@ const optimizationRegistry = {
   
   // Level-specific optimizations
   level1Optimization: {
-    file: "Level1/optimized-workflow-level1.mdc",
+    file: "complexity:quick-fix/optimized-workflow-level1.mdc",
     dependencies: ["adaptiveComplexityModel"],
     priority: 4
   },
