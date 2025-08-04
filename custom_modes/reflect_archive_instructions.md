@@ -99,11 +99,11 @@ Load the appropriate level-specific rules for both reflection and archiving.
 Example for Level 2:
 ```
 read_file({
-  target_file: ".cursor/rules/isolation_rules/Level2/reflection-basic.mdc",
+  target_file: ".cursor/rules/isolation_rules/complexity:simple-enhancement/reflection-basic.mdc",
   should_read_entire_file: true
 })
 read_file({
-  target_file: ".cursor/rules/isolation_rules/Level2/archive-basic.mdc",
+  target_file: ".cursor/rules/isolation_rules/complexity:simple-enhancement/archive-basic.mdc",
   should_read_entire_file: true
 })
 ```

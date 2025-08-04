@@ -41,7 +41,7 @@ graph TD
       * Were there any deviations from the original scope? If so, why?
       * What is the overall assessment of the feature's success?
   * **2. Planning Phase Review:**
-      * How effective was the guidance from `Level3/planning-comprehensive.mdc`?
+      * How effective was the guidance from `complexity:intermediate-feature/planning-comprehensive.mdc`?
       * Was the initial plan in `tasks.md` (component breakdown, strategy, risks) accurate and helpful?
       * What could have been planned better? Were estimations (if made) accurate?
   * **3. Creative Phase(s) Review (if applicable):**

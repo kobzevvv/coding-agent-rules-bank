@@ -46,7 +46,7 @@ Each complexity level has been optimized:
 - Consolidated memory bank updates
 - Streamlined verification processes
 
-**Example File**: [.cursor/rules/isolation_rules/Level1/optimized-workflow-level1.mdc](/.cursor/rules/isolation_rules/Level1/optimized-workflow-level1.mdc)
+**Example File**: [.cursor/rules/isolation_rules/complexity:quick-fix/optimized-workflow-level1.mdc](/.cursor/rules/isolation_rules/complexity:quick-fix/optimized-workflow-level1.mdc)
 
 ### 5. Optimization Integration
 
@@ -84,7 +84,7 @@ Central coordination of all optimizations:
 
 ### Level-Specific Optimizations
 
-5. [/.cursor/rules/isolation_rules/Level1/optimized-workflow-level1.mdc](/.cursor/rules/isolation_rules/Level1/optimized-workflow-level1.mdc)
+5. [/.cursor/rules/isolation_rules/complexity:quick-fix/optimized-workflow-level1.mdc](/.cursor/rules/isolation_rules/complexity:quick-fix/optimized-workflow-level1.mdc)
    - Streamlined workflow for quick bug fixes
    - Ultra-compact documentation templates
    - Consolidated memory bank updates

@@ -88,7 +88,7 @@ For maximum efficiency, Level 1 tasks can use this ultra-compact template:
 Use these helpers to automatically generate documentation:
 
 ```javascript
-function generateLevel1Documentation(issue, rootCause, solution, verification) {
+function generatecomplexity:quick-fixDocumentation(issue, rootCause, solution, verification) {
   return `## 🔧 FIX: ${issue}
 📌 Problem: ${issue}
 🔍 Cause: ${rootCause}
@@ -142,7 +142,7 @@ Optimize Memory Bank updates for Level 1 tasks by using a single operation:
 
 ```javascript
 // Pseudocode for optimized Level 1 Memory Bank update
-function updateLevel1MemoryBank(taskInfo) {
+function updatecomplexity:quick-fixMemoryBank(taskInfo) {
   // Read current tasks.md
   const tasksContent = readFile("tasks.md");
   
